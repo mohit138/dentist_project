@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Patient Record</title>
+
+</head>
+<body>
+
+	<form action="temp_handle.php" method="POST">
+		<p><b>Patient Record</b></p>
+		<br>
+		<input type="text" name="name" placeholder="Patient Name">
+		<br>
+		<input type="text" name="age" placeholder="Age">
+		<br>
+		<input type="text" name="contact" placeholder="Contact Details">
+		<br>
+		Male : <input type="radio" name="gender" value="Male"> &nbsp;&nbsp;&nbsp;&nbsp;
+		Female :<input type="radio" name="gender" value="Female"> &nbsp;&nbsp;&nbsp;&nbsp;
+		Other :<input type="radio" name="gender" value="Other" checked>
+		<br>
+		<input type="text" name="addr" placeholder="Address">
+		<br>
+		<input type="text" name="c_comp" placeholder="Chief Complaint">
+		<br>
+		<input type="text" name="m_hist" placeholder="Medical History">
+		<br>
+		<input type="text" name="pd_hist" placeholder="Past Dental History">
+		<br>
+		<p>Oral Hygiene Habits</p>
+		<br>
+		<input type="text" name="m_brush" placeholder="Method of Brushing">
+		<br>
+		<input type="text" name="freq" placeholder="Frequency">
+		<br>
+		<input type="text" name="dur" placeholder="Duration">
+		<br>
+		<input type="text" name="mat" placeholder="Material Used">
+		<br>
+		<input type="text" name="diag" placeholder="Diagnosis">
+		<br>
+		<p>Clinical Examination</p>
+		<br>
+		<input type="text" name="b_prob" placeholder="Bleeding on Probing">
+		<br>
+		<input type="text" name="prob_d" placeholder="Probing Depth">
+		<br>
+		<input type="text" name="treatment" placeholder="Treatment Offered">
+		<br>
+		<button type="submit" name="submit">Submit</button>
+	</form>
+
+</body>
+</html>
