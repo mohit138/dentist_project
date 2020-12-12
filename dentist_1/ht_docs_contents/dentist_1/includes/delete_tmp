@@ -1,0 +1,14 @@
+<?php
+
+	include_once 'dbh.inc.php';
+
+	$rm_tmp = "DROP TABLE temp ;";
+	mysqli_query($conn, $rm_tmp);
+
+	$mk_tmp = "CREATE TABLE temp (
+    id int(11) not null PRIMARY KEY Auto_INCREMENT,
+    temp int(11) not null 
+    );";
+	mysqli_query($conn, $mk_tmp);    
+
+?>
