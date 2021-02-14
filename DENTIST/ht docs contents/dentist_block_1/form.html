@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Patient Record</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+	<h1>Patient Record</h1>
+	<form action="disp_temp.php" method="POST" style="margin: 30px;">
+		<div class="form-row">
+			<div class="col">
+				<input type="text" class="form-control" name="name" placeholder="Patient Name">				
+			</div>
+			<div class="col">
+				<input type="text" class="form-control" name="age" placeholder="Age">
+			</div>
+		</div>
+		<br>
+		<div class="form-row">
+			<div class="col">
+				<input type="text" class="form-control" name="contact" placeholder="Contact Details">				
+			</div>
+			<div class="col" style="text-align: left; ">
+				<label style="font-size: 20px;">Gender :  </label>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="Male">
+				  <label class="form-check-label" for="inlineRadio1">Male</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="Female">
+				  <label class="form-check-label" for="inlineRadio2">Female</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="gender" id="inlineRadio3" value="Other" checked>
+				  <label class="form-check-label" for="inlineRadio3">Other</label>
+				</div>
+				
+			</div>
+		</div>
+		<br>
+		<div class="form-row">
+			<div class="col">
+				<input type="text" class="form-control" name="addr" placeholder="Address">				
+			</div>
+			<div class="col">
+				<input type="text" class="form-control" name="c_comp" placeholder="Chief Complaint">
+			</div>
+		</div>
+		<br>
+		<div class="form-row">
+			<div class="col">
+				<input type="text" class="form-control" name="m_hist" placeholder="Medical History">				
+			</div>
+			<div class="col">
+				<input type="text" class="form-control" name="pd_hist" placeholder="Past Dental History">
+			</div>
+		</div>
+		<br>
+		<h2 style="text-align: left; margin-top:20px;">Oral Hygiene Habits</h2>
+		<br>
+		<div class="form-row">
+			<div class="col">
+				<input type="text" class="form-control" name="m_brush" placeholder="Method of Brushing">				
+			</div>
+			<div class="col">
+				<input type="text" class="form-control" name="freq" placeholder="Frequency">
+			</div>
+		</div>
+		<br>
+		<div class="form-row">
+			<div class="col">
+				<input type="text" class="form-control" name="dur" placeholder="Duration">				
+			</div>
+			<div class="col">
+				<input type="text" class="form-control" name="mat" placeholder="Material Used">
+			</div>
+		</div>
+		<br>
+		<div class="form-row">
+			<div class="col">
+				<input type="text" class="form-control" name="diag" placeholder="Diagnosis">				
+			</div>
+		</div>
+		<br>
+		<h2 style="text-align: left; margin-top:20px;">Clinical Examination</h2>
+		<br>
+		<div class="form-row">
+			<div class="col">
+				<input type="text" class="form-control" name="b_prob" placeholder="Bleeding on Probing">				
+			</div>
+			<div class="col">
+				<input type="text" class="form-control" name="prob_d" placeholder="Probing Depth">
+			</div>
+		</div>
+		<br>
+		<div class="form-row">
+			<div class="col">
+				<input type="text" class="form-control" name="treatment" placeholder="Treatment Offered">				
+			</div>
+		</div>
+		<br>
+		<div  style="text-align: center;">
+			<button type="submit" name="submit" class="btn btn-primary">Submit</button>
+		</div>
+		<br>
+		<!-- 
+		<div class="form-group">
+
+			<input type="text" class="form-control" name="name" placeholder="Patient Name">
+			<br>
+			<input type="text" name="age" placeholder="Age">
+			<br>
+			<input type="text" name="contact" placeholder="Contact Details">
+			<br>
+			<div class="radio">
+			<input type="radio" name="gender" value="Male"><label style="padding-left: 5px; padding-right: 45px;">: Male</label>
+			<input type="radio" name="gender" value="Female"><label style="padding-left: 5px; padding-right: 45px;">: Female</label>
+			<input type="radio" name="gender" value="Other" checked><label style="padding-left: 5px; padding-right: 45px;">: Other</label>
+			</div>
+			<br>
+			<input type="text" name="addr" placeholder="Address">
+			<br>
+			<input type="text" name="c_comp" placeholder="Chief Complaint">
+			<br>
+			<input type="text" name="m_hist" placeholder="Medical History">
+			<br>
+			<input type="text" name="pd_hist" placeholder="Past Dental History">
+			<br>
+			<p>Oral Hygiene Habits</p>
+			<br>
+			<input type="text" name="m_brush" placeholder="Method of Brushing">
+			<br>
+			<input type="text" name="freq" placeholder="Frequency">
+			<br>
+			<input type="text" name="dur" placeholder="Duration">
+			<br>
+			<input type="text" name="mat" placeholder="Material Used">
+			<br>
+			<input type="text" name="diag" placeholder="Diagnosis">
+			<br>
+			<p>Clinical Examination</p>
+			<br>
+			<input type="text" name="b_prob" placeholder="Bleeding on Probing">
+			<br>
+			<input type="text" name="prob_d" placeholder="Probing Depth">
+			<br>
+			<input type="text" name="treatment" placeholder="Treatment Offered">
+			<br>
+			<button type="submit" name="submit">Submit</button>
+		</div> -->
+	</form>
+
+</body>
+</html>
