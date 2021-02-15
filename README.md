@@ -17,3 +17,5 @@ The Webpage - It has 2 major functions. First one is to take up the patient data
 ![alt text](DENTIST/images/Screenshot%20(106).png?raw=true)
 
 ![alt text](DENTIST/images/Screenshot%20(117).png?raw=true)
+
+*Main code resides in DENTIST folder.*
